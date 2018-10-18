@@ -67,3 +67,7 @@ def logout():
 @login_required
 def account():
     return render_template('account.html', title='Account')
+
+@app.route("/imageseg")
+def image_seg():
+    return render_template('imageseg.html', title='Image Segmentation')
