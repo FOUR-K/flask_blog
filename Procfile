@@ -1,1 +1,1 @@
-web: python run.py
+web: waitress-serve --port=$PORT flaskblog:app
